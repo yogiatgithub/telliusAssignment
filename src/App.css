@@ -1,38 +1,67 @@
+body{
+  background-color: aqua;
+}
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  width: 800px;
+  justify-items: center;
+  margin: 20px auto;
+  border: 2px solid black;
+  min-height: 400px;
+  height: fit-content;
+}
+.header {
+  display: flex;
+    align-items: center;
+    min-height: 40px;
+    /* justify-content: center; */
+    /* justify-items: center; */
+    background-color: antiquewhite;
+}
+.title {
+  margin: auto;
+  border: 2px solid black;
+  text-decoration: none;
+  height: 40px;
   align-items: center;
+  width: 100%;
+  text-align: center;
+  padding: auto;
+}
+.noteApp {
+    margin: 20px 0px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+.notesidebar {
+  display: flex;
+  justify-content: space-around;
+   align-items: flex-start;
+}
+.items{
+  display: flex;
+  flex-direction: column;
+
+}
+.item {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px 0px;
+  align-items: center;
+}
+.check-list-item{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 2px;
+  align-items: center;
+  height: 40px;
 }
-
-.App-link {
-  color: #61dafb;
+.checklistsidebar{
+  margin: 0px 8px;
+  height: fit-content;
+  align-items: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input {
+  height: 20px;
 }
